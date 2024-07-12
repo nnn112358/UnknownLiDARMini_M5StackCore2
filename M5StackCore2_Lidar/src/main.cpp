@@ -2,7 +2,7 @@
 
 #define LIDARSerial Serial1
 
-// M5UnifiedのCanvasオブジェクトを初期化します。これを利用してグラフィック描画が可能です。
+// M5UnifiedのCanvasオブジェクトを初期化。
 M5Canvas canvas(&M5.Display);
 
 struct Point_t {
