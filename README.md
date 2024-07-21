@@ -1,74 +1,16 @@
 # UnknownLiDARMini_M5StackCore2
 
-アリエクのジャンク中華ミニ LiDAR を M5Stack Core2 (ESP32) , PlatformIO で使うコードです。
+https://github.com/user-attachments/assets/456000e1-3c88-458d-b501-94e88ccd649b
+操作：
+Aボタン：縮小
+Bボタン：ポイント表示、ポリゴン表示切替
+Cボタン：拡大
 
-製品リンク（ https://ja.aliexpress.com/item/1005007119470172.html ）
+謎LiDAR を M5StackCore2 (ESP32) , PlatformIO で使うコードです。
 
-![image](https://github.com/devemin/UnknownLiDARMini_M5StackCore2/assets/52738228/1af608ec-e58e-4f54-b4f7-3d0dd5b4d14e)
+製品リンク（ https://ja.aliexpress.com/item/1005007119470172.html ） <br>
 
-
-どうやらこの LiDAR は、Camsense X1 と似たパケットデータとなっていました。
-
-
-@yishii さんのCamsense X1 用コードが基本となっています。感謝！
-
-
-# 環境
-
-M5Stack Core2
-
-PlatformIO
-
-# ピンアサイン
-
-![image](https://github.com/devemin/UnknownLiDARMini_M5StackCore2/assets/52738228/1e25e9b1-362c-4d86-8162-2a21ba2d3334)
-
-このコードでは、
-
-| (Core2) | (LiDAR) |
-----|---- 
-| GPIO 32 pin | TX pin |
-| 5V | 5V |
-| GND | GND |
-
-としました。
-
-(ケーブルの色が紛らわしいので間違えないよう注意！)
-
-# パケット例
-
-https://x.com/devemin/status/1809545109446513061
-
-https://x.com/devemin/status/1809579265714975058
-
-# デモ
-
-https://x.com/devemin/status/1809596244073054370
-
-# メモ
-
-どうも最短距離がけっこう大きい？（0.6m くらいある？）
-
-データが取れない？と思ったときは、少し距離を離してみましょう。
-
-（もう少し近距離が取れるモード変更とかあると良いのですが・・・未知。）
-
-
-# Camsense X1 コードからの差異
-
-・ヘッダ (4byte) 変更
-
-・8個の深度データ　→　16個に
-
-
-# 試行錯誤のスレッドリンク
-
-https://x.com/devemin/status/1807955915838218345
-
-# LICENSE
-
-This code is from his code.
-
-Thanks!!!  :-)
-
-https://github.com/yishii/LiDAR_Camsense_X1_M5Stack
+# Reference
+This source was based on @devemin. I would like to commend @devemin's contribution. <br>
+https://github.com/devemin/UnknownLiDARMini_M5StackCore2 <br>
+https://github.com/yishii/LiDAR_Camsense_X1_M5Stack <br>
