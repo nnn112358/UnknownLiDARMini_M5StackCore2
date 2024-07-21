@@ -1,6 +1,7 @@
-# UnknownLiDARMini_M5StackCore2
- <br>
+# UnknownLiDARMini_M5StackCore2 <br>
+
 謎LiDAR を M5StackCore2 (ESP32) , PlatformIO で使うコードです。 <br>
+[@devemin](https://github.com/devemin/UnknownLiDARMini_M5StackCore2)氏のリポジトリをベースに改造しています。
 
 ![image](https://github.com/user-attachments/assets/c61b597a-9f47-4470-8e1f-c0184e905281)
 
